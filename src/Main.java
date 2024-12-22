@@ -10,11 +10,11 @@ public class Main {
         URL url = new URL("https://ewib.nbp.pl/plewibnra?dokNazwa=plewibnra.txt");
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Podaj pierwsze trzy cyfry numeru konta: ");
+        System.out.print("Enter the first three digits of the account number:");
         String userInput = scanner.nextLine();
 
         if (userInput.length() != 3 || !userInput.matches("\\d{3}")) {
-            System.out.println("Podano nieprawidłowy numer. Upewnij się, że wprowadziłeś trzy cyfry.");
+            System.out.println("Invalid number provided. Please ensure you entered three digits.");
             return;
         }
 
